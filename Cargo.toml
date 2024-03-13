@@ -1,0 +1,15 @@
+[package]
+name = "image-bench"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+zune-core = "0.4.12"
+zune-image = { version = "0.4.15" }
+zune-imageprocs = "0.4.15"
+image = "0.24.8"
+criterion = { version = "0.4" }
+
+[[bench]]
+name = "image_rs_vs_zune_image"
+harness = false
